@@ -16,14 +16,11 @@ while True:
     print("[4] Basic Input and Output in Python")
     print("[5] Midterm Lesson 1 - Conditional Statement in Python")
     print("[6] Midterm Lesson 2 - Logical Operator")
+    print("[7] Finals introduction to iteration and loops")
     print("[0] Exit")
 
-    try:
-        code = int(input("Choose one lesson from number [1-6] and [0] Exit: "))
-    except ValueError:
-        print("Please Enter Lesson number only!")
-        input("Enter anything to continue.....:")
-        continue
+
+    code  = int(input("Choose one lesson from number [1-7] and [0] Exit: "))
 
     if code == 1:
         print("Lesson 1 - Introduction To Programing")
@@ -35,7 +32,7 @@ while True:
         print("[Q] Exit Lesson.")
 
         while True:
-            letter = input("Enter Letter in Lesson 1 and Enter(Q) Exit: ").upper()
+            letter = input("Enter the Letter in Lesson 1 and Enter(Q) to Exit: ").upper()
 
             if letter == "C":
                 print("-------What is Programming Language?-------")
@@ -46,8 +43,8 @@ while True:
             elif letter == "O":
                 print("-------Who Build Python Programming?------- ")
                 print("")
-                print("Python is a widely-used programming language that was created by Guido van Rossum in 1991.")
-                print("A dutch software engineer best known for creating the Python programming language in 1991.")
+                print("Python was created by Guido van Rossum and first released on February 20, 1991. ")
+                print("Thousands of developers, educators, scientists, and enthusiasts continue to shape Python, expanding its reach into AI, data science, education, and beyond.")
                 print("He designed Python with the goal of making programming simple, readable, and easy to learn while remaining powerful enough for professional software development.")
 
             elif letter == "D":
@@ -64,14 +61,12 @@ while True:
                 print("-------Why Learn Python?-------")
                 print("")
                 print("1. Simple and easy to learn - Great for beginners.")
-                print("2. Readable syntax – Code looks almost like English.")
-                print("3. Versatile – Used in many fields (AI,web, automation, games, etc.)")
-                print("4. Huge community– Lots of support, tutorials, and libraries.")
+                print("2. Easy to understand Python readability non-complexity and ability for fast prototyping contribute to its popularity. ")
+                print("3. Python uses modern scripting and friendly syntax.")
+                print("4. Huge community Lots of support tutorials and libraries.")
 
             elif letter == "S":
-                print("-------What do you need to start Python Programming?-------")
-                print("")
-                print("Personal computer or Laptop")
+                print("-------what are the things you need in order to start python programming?-------")
                 print("")
                 dev = input("Do you have Personal Computer or Laptop? (Y)Yes or (N)No: ").upper()
 
@@ -85,9 +80,9 @@ while True:
                 elif dev == "N":
                     print("if (NO) you can still learn and write real Python code right on your smartphone or tablet.")
 
-                    print("Online GDB is online compiler and debugger for C/C++.")
+                    print("Online GDB is online compiler and debugger for python and more language")
                     print(
-                        "You can compile, run and debug code with gdb online. Using gcc/g++ as compiler and gdb as debugger.")
+                        "You can compile, run and debug code with gdb online. Using python as compiler and gdb as debugger.")
                 else:
                     print("Invalid input, enter Y or N only!")
 
@@ -102,13 +97,15 @@ while True:
 
     elif code == 2:
         print("Lesson 2 - Basic Syntax")
-        print("[1] What is Python Syntax?")
-        print("[2] Python syntax case sensitive.")
-        print("[3] Python syntax Indentation.?")
-        print("[4] Python Printing Output.")
-        print("[5] Python Comments.")
-        print("[6] Variables, constants and data types in Python.")
-        print("[7] Basic Data types in Python.")
+        print("What is Python Syntax?")
+        print("Python syntax is the set of rules that defines how a Python program is written and interpreted known for its clean readable,")
+        print("English-like structure that relies on indentation instead of curly braces.")
+        print("[1] Python syntax case.")
+        print("[2] Python syntax Indentation.")
+        print("[3] Python Printing Output.")
+        print("[4] Python Comments.")
+        print("[5] Variables constants and data types in Python.")
+        print("[6] Basic Data types in Python.")
         print("[0] Exit Lesson.")
 
         while True:
@@ -116,16 +113,19 @@ while True:
                 num = int(input("Choose Lesson 2 Number (1-6) and enter (0) to Exit:"))
             except ValueError:
 
-                print("Please enter 1-7 only and 0 To Exit Lesson!")
+                print("Please enter 1-6 only and 0 To Exit Lesson!")
                 input("Enter anything to continue....:")
                 continue
 
             if num == 1:
-                print("-------What is Python Syntax?-------")
+                print("-------What is Python Syntax case?-------")
                 print("")
                 print("Syntax refers to the set of rules that tells us how to correctly write a program in Python.")
+                print('name = "John"')
+                print("print(name)")
+
             elif num == 2:
-                print("-------Python Case Sensitive-------")
+                print("-------Python syntax Indentation-------")
                 print("")
                 print("Python treats uppercase and lowercase letters differently.")
                 print("")
@@ -140,53 +140,37 @@ while True:
                     print("print(Name), Error! Name is not the same as name.")
                 elif example == "N":
                     print("Okay! Thank you!")
-                else:
-                    print("Invalid input! Please enter only 1 or 2.")
+
             elif num == 3:
-                print("-------Python Indentation-------")
+                print("-------Python Printing Output-------")
                 print("")
                 print("Unlike other programming languages, Python uses indentation (spaces) to define blocks of code.")
                 print("")
                 print("Example Correct code:")
-                print("age = 24")
+                print("age = 20")
                 print("if age >= 18:")
-                print('    print("adult")')
+                print('     ("You are an adult").')
                 print("")
                 print("Example Wrong code:")
-                print("age = 24")
+                print("age = 20")
                 print("if age >= 18:")
-                print('print("adult"), Not indented!')
+                print('("adult") Not indented!')
+
             elif num == 4:
-                print("-------Python Printing Output-------")
+                print("-------Python Comments-------")
                 print("")
                 print("print() — The function that display output.")
                 print("Example:")
                 print('print("Hello, World!")')
-                print('print(100)')
-                print('print("My age is", 18)')
+                print('print("My age is", 24)')
                 print("")
                 print("Output:")
-                print("       Hello, World!")
-                print("       100")
-                print("       My age is 18")
+                print("Hello, World!")
+                print("My age is 24")
+
+
             elif num == 5:
-                print("-------Python Comments-------")
-                print("")
-                print("Used hast '#' for single line comment.")
-                print('Used triple quotes """ for multi line comment')
-                print("Comments are ignored by Python.")
-                print("They are used to explain the code.")
-                print("")
-                print("Example of Python Comments")
-                print("# This is a comment")
-                print("")
-                print('"""')
-                print("This is")
-                print("a multi line")
-                print("comment")
-                print('"""')
-            elif num == 6:
-                print("-------Variables, constants and data types in Python-------")
+                print("-------Variables constants and data types in Python-------")
                 print("")
                 print("What is Variable?")
                 print("A variable is a named storage location used to keep data in a program. The value of a variable can change while the program is running.")
@@ -210,21 +194,22 @@ while True:
                 print("")
                 print("In the print() function, you output multiple variables, separated by a comma:")
                 print("Example Code:")
-                print('c = "I"')
-                print('p = "Python"')
-                print('d = "Coding"')
-                print('print(a, b, c)')
-                print("Output: I Python Coding")
-            elif num == 7:
+                print('p = "I"')
+                print('y = "Love"')
+                print('t= "Coding"')
+                print('print(p, y, t)')
+                print("Output: I Love Coding")
+
+            elif num == 6:
                 print("-------Basic Data Types in Python-------")
                 print("")
                 print("Data types: are categories that tell Python what kind of data a variable stores. They determine the type of value a variable can hold and what operations can be performed on that value.")
                 print("")
                 print("Example of Declaration of Variables:")
-                print('name = "jow"   #text - string')
-                print('age = 24         #whole number - int')
-                print('grade = 87.00.   #decimal - float')
-                print('is_student = True #True/False boolean')
+                print('name = "jow"         #text - string')
+                print('age = 24             #whole number - int')
+                print('grade = 87.00.       #decimal - float')
+                print('is_student = boolean Logical values representing True or False (must be capitalized)')
                 print("")
                 print("Assigned Value and Output the Value")
                 print('print(name)')
@@ -243,14 +228,13 @@ while True:
         print("Arithmetic operators are symbols used to perform mathematical calculations on numbers. They work the same way as the operators used in everyday mathematics.")
         print("")
         print("Lesson 3 - Arithmetic Operators")
-        print("[1] Addition (+)")
-        print("[2] Subtraction (-)")
-        print("[3] Multiplication (*)")
-        print("[4] Division (/)")
-        print("[5] Floor Division (//)")
-        print("[6) Modulus (%)")
-        print("[7] Exponentiation (**)")
-        print("[8] Expression in python.")
+        print("[1] Addition (+) add two values together")
+        print("[2] Subtraction (-) Subtracts the right value from the left")
+        print("[3] Multiplication (*) Multiplies two values together")
+        print("[4] Division (/)	Divides the left value by the right")
+        print("[5] Floor integer/Division (//) Divides and rounds down to the nearest whole number")
+        print("[6) Modulus (%) Returns the remainder after division")
+        print("[7] Exponentiation (**) Raises the left value to the power of the right")
         print("[0] Exit Lesson.")
 
         while True:
@@ -361,31 +345,29 @@ while True:
                 print("-------Formatting Output-------")
                 print("Using comma, in print()")
                 print("Example:")
-                print('names = input("Enter your name: ")')
-                print('ages = int(input("Enter your age: ")')
-                print('("Name:", names')
-                print('(Ages"", ages')
+                print('name = input("Enter your name: ")')
+                print('age = int(input("Enter your age: ")')
+                print('("Name:", name')
+                print('(Age"", age')
 
             elif basic == 3:
                 print("-------Converting Input to other data types-------")
                 print("Float Input(for decimal numbers")
                 print("Example code:")
-                print('grade = float(input("Enter math grade:")')
+                print('grade = float(input("Enter your grade:")')
                 print('(f"Your grade is: {grade}")')
                 print("")
+
                 print('Boo leen input ("True or False using condition")')
                 print("Example code:")
-                print('answer = input("Are you a student?: Yes  ")')
-                print('age = int(input("How old are you?: 19 "))')
-                print("")
+                print('answer = input("Are you a student?: (Yes/no): ')
                 print('is_student = answer.lower() == "yes"')
-                print('is_young = age < 25')
-                print("")
-                print('("Student:", is_student)')
-                print('("Age under 25:", is_young)')
-                print("Output: Student: True")
-                print("Output: Age under 25: True")
-                print("")
+                print('Student status:" , ("is_student")')
+
+                name = input("Enter your name: ")
+                age = int(input("Enter your age: "))
+                grade = float(input("Enter your grade: "))
+                print(f"student: {name}, age: {age}, final grade: {grade}")
 
             elif basic == 0:
                 print("Exiting Lesson 4!")
@@ -397,7 +379,7 @@ while True:
     elif code == 5:
         print("Midterm Lesson 1 - Conditional Statement in Python")
         print("[1] Introduction to Conditional Statement")
-        print("[2] Relational Operator")
+        print("[2] Relational Operators")
         print("[3] The if Statement")
         print("[4] The if-else Statement")
         print("[5] The if-elif-else Statement")
@@ -406,7 +388,7 @@ while True:
 
         while True:
             try:
-                condi = int(input("Choose (1-6) Condition Lesson and (0) To exit: "))
+                condi = int(input("Choose (1-6) Condition Lesson or click (0) if want To exit: "))
             except ValueError:
                 print("Enter only 1-6 and 0 To Exit!")
                 input("Enter Anything to Continue.....: ")
@@ -432,71 +414,84 @@ while True:
 
             elif condi == 2:
                 print("-------Relational Operator-------")
-                print("Relational operator, also called comparison operators, are used to compare two values. The result is always either True or FalseFalse.")
-                print("")
+                print("Relational operators (also called comparison operators) compare two values and return ")
+                print("a boolean result—either True or False—depending on whether the relationship is accurate.")
+
+                print('Example: (" a = 10, b  = 5 ") ')
                 print("Operator | Meaning                  | Example | Result")
-                print("  ==     | Equal to                 |  5 == 5  | True")
-                print("  !=     | Not equal                |  5 != 2  | True")
-                print("  >      | Greater than             |  10 > 5  | True")
-                print("  <      | Less than                |  3 < 1   | False")
-                print("  >=     | Greater than or equal to |  5 >= 5  | True")
-                print("  <=     | Less than or equal  to   |  4 <= 2  | False")
+                print("  ==     | Equal to                 |  a == b  | False")
+                print("  !=     | Not equal to             |  a != b  | True")
+                print("  >      | Greater than             |  a  > b  | True")
+                print("  <      | Less than                |  a  < b  | False")
+                print("  >=     | Greater than or equal to |  a >= 10 | True")
+                print("  <=     | Less than or equal  to   |  b <= 5  | True")
 
             elif condi == 3:
                 print("-------The if Statement-------")
-                print("The if statement execute a block of codes only when a condition is True")
+                print("The if statement in Python is a conditional control structure that executes a specific block of code only when a given condition evaluates to True.")
                 print("")
                 print("Example code:")
-                print("age = 24")
+                print("age = 20")
                 print("if age >= 18:")
+                print("You are an adult.")
                 print("You can vote!")
 
             elif condi == 4:
                 print("-------The if-else Statement-------")
-                print("The else statement provides an alternative when the if condition is false.")
-                print("")
+                print("The if-else statement in Python is a two-way conditional structure that executes")
+                print("one block of code when a condition is True and a separate alternative block when the condition is False.")
                 print("Example code:")
-                print("age = 15")
-                print("if age >= 18:")
-                print("Adult")
+                print("grade = 72")
+                print("if grade >= 75:")
+                print("You passed!")
                 print("else:")
-                print("Not an adult yet")
+                print("You failed. Try again.")
                 print("")
-                print("Output: Not an adult yet")
+                print("Output:You failed. Try again.")
 
             elif condi == 5:
                 print("-------The if-elif-else Statement-------")
                 print("The  elif  statement is used when there are multiple conditions to evaluate. Python checks each condition from top to bottom and executes the first condition that is True.")
                 print("")
                 print("Example Code:")
-                print("score = 85")
+                print("score = 84")
                 print("if score >= 90:")
-                print("A")
+                print("      Grade: A")
                 print("elif score >= 80:")
-                print("B")
-                print("elif score >= 70:")
-                print("C")
+                print("      Grade: B")
+                print("elif score >= 75:")
+                print("      Grade: C")
                 print("else:")
-                print("Needs improvement")
+                print("      Grade: F ")
                 print("")
-                print("Output: B")
+                print("Output: Grade: B")
 
             elif condi == 6:
                 print("-------Nested Condition-------")
-                print("A Nested condition is a condition inside another condition.")
-                print("")
-                print("Example code:")
-                print("age = 20")
-                print("has_id = True")
+                print("A nested condition is an if, if-else, or if-elif-else statement placed inside another conditional statement,")
+                print("allowing a program to evaluate a second condition only after an initial condition turns out to be True.")
+                print("Here is a nested condition checking age and valid ID for a driver's license application:")
+                print("age = 24")
+                print("has_valid_id = True")
                 print("if age >= 18:")
-                print("   if has_id:")
-                print("You may enter")
+                print("   if  has_valid_id:")
+                print("        Approved: You meet the age and ID requirements.")
                 print("   else:")
-                print("Need your ID")
-                print('else:')
-                print("Too young")
+                print("        Denied: You are old enough, but you need a valid ID.")
+                print(' else:')
+                print("        Denied: You must be at least 18 years old.")
                 print("")
-                print("Output: You may enter")
+                print("Output: Approved: You meet the age and ID requirements.")
+
+            elif code == 7:
+                print("Finals introduction to iteration and loops")
+                print("[1] Introduction to iteration ")
+                print("[2] Types of loops in python")
+                print("[3] The if Statement")
+                print("[4] The if-else Statement")
+                print("[5] The if-elif-else Statement")
+                print("[6] Nested Condition")
+                print("[0] Exit!")
 
             elif condi == 0:
                 print("Exiting Midterm Lesson 1!")
@@ -591,19 +586,23 @@ while True:
                 print("Truth Table - not")
                 print()
                 print("    Condition   |   Not condition")
-                print("  True          |      True      ")
-                print("  True          |      False     ")
-                print()
+                print("  True          |      False      ")
+                print("  False         |      True       ")
+
+                print("        Easy way to remember: ")
+                print("NOT = BALIKTARIN ANG RESULT")
                 n = input("Would you like example code? Enter Y(Yes) or N(NO): ").upper()
 
                 if n == "Y":
+                    print("")
                     print("is_raining = False")
+                    print("")
                     print("if not is_raining:")
-                    print('    print("Nice weather!")')
-                    print("    else:")
-                    print('        print("Bring an umbrella.")')
-                    print()
-                    print("Output: Nice weather!")
+                    print('    print("You can go outside.")')
+                    print("else:")
+                    print('    print("Bring an umbrella.")')
+                    print("")
+                    print("Output: You can go outside")
                 elif n == "N":
                     print("Okay, Thank you!")
 
@@ -620,8 +619,9 @@ while True:
 
     elif code == 0:
         print("Thank you so much for using Python Tutorial!")
-        break
+
 
     else:
         print("Invalid Choice! Please choose 1-6 only!")
+    input("Enter anything to return in Python Tutorial!: ")
     input("Enter anything to return in Python Tutorial!: ")
