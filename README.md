@@ -5,7 +5,7 @@ while True:
     print("=" * 40)
 
     print("")
-    print("Hello sir! welcome to python tutorial system.")
+    print("Hello Everyone! welcome to python tutorial system.")
     print("How can I help you today?")
 
     print("")
@@ -21,8 +21,11 @@ while True:
 
 
     code  = int(input("Choose one lesson from number [1-7] and [0] Exit: "))
+    if code == 0:
+        print("Exit the program.THANYOU!")
+        break
 
-    if code == 1:
+    elif code == 1:
         print("Lesson 1 - Introduction To Programing")
         print("[C] What is Programming Language?")
         print("[O] Who Build Python Programming?")
@@ -189,7 +192,7 @@ while True:
                 print("The Python print() function is often used to output variables.")
                 print("Example Code:")
                 print('exam = "Welcome Python Tutorial!"')
-                print("print(exam")
+                print("print(exam)")
                 print("Output: Welcome Python Tutorial!")
                 print("")
                 print("In the print() function, you output multiple variables, separated by a comma:")
@@ -542,7 +545,7 @@ while True:
                     print("if age >= 18 and has_id:")
                     print(" You can enter!")
                     print("else:")
-                    print("Cannot enter.")
+                    print(" Cannot enter.")
                     print("")
                     print("Output: You can enter!")
                     print("You need to be 18+ and have an ID")
@@ -831,3 +834,4 @@ while True:
 
             else:
                 print("Invalid input! Choose only number (1-5) and (0) to exit in Final Lesson!")
+
